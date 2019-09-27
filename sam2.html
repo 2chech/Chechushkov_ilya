@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8" />
+<title>Замена текста на время</title>
+</head>
+<body>
+        <script>
+                let a=confirm('Нажмите ок для замены текста');
+                function changeText() {
+                let date_=Date();
+                let p = document.getElementById('p');
+                p.innerText = p.textContent=document.write(date_);
+                }
+        </script>
+        <button onclick="changeText();">Нажмите для замены текста</button>
+        <h6 id="p">Стандартный текст</h6>
+
+</body>
+</html>

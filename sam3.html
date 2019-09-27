@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8" />
+<title>Данные о квартире</title>
+</head>
+<body>
+        <script>
+        
+function createFlat() {
+let flat = new Object();
+flat.address = "пр. Ленина 8";
+flat.rooms = "4";
+flat.price = "8,500,000";
+flat.repair="Чистовая отделка";
+document.write("Адрес - "+flat.address+ ", комнаты - "+flat.rooms+", цена - "+flat.price+", ремонт - " + flat.repair);
+}
+</script>
+<button onclick="createFlat();">Нажмите для вывода информации о квартире</button>
+</body>
+</html>
