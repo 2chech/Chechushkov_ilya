@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="p1"></p>
+<script>
+   let num;
+   let text;
+do {
+  num = prompt("Введите число, большее 100", 0);
+
+} while (num <= 100 && num);
+text = prompt("Введите текст");
+var words = text.split(' ');
+var word0 = words[0];
+var word1 = words[1];
+if (word1===undefined)
+{
+    alert('В тексте одна строчка');
+}
+else{
+alert("Вторая сточка: "+word1);
+}
+</script>
+</body>
+</html>

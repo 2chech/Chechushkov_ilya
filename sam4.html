@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="p1"></p>
+<script>
+    function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+function toWeirdCase(x){
+            var str = x.toLowerCase().split('');  
+            var j = 0;
+            for(var i = 0; i < str.length; i++){ 
+                if(str[i] == ' '){
+                    j = 0;
+                    continue;
+                }
+                else{
+                    if (j % 2 == 0){
+                        str[i] = str[i].toLowerCase(); 
+                    }
+                    else {str[i] = str[i].toUpperCase();}
+                    j++;
+                }
+            }
+            return str.join('');
+        } 
+
+let y = getRandomInt(1, 45);
+//let z = alert(y);
+let x = prompt("Введите строку из "+ y +" символов");
+//x1 = x.toString();
+alert("введено " + x.length+ " символов");
+//alert(y);
+if (x.length>=y)
+{
+    document.getElementById("p1").innerHTML = toWeirdCase(x);
+}
+else {
+    let x = prompt("Кол-во символов, не совпадает Введите строку из "+ y +" символов");
+}
+</script>
+</body>
+</html>
